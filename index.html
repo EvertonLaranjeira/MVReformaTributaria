@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal da Reforma Tributária da MV Contadores."
+    />
+    <title>Portal da Reforma Tributária | MV Contadores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- CABEÇALHO: edite os links do menu conforme as páginas do portal. -->
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#inicio" aria-label="MV Contadores - Página inicial">
+          <!-- LOGO: arquivo em IMG/logo-escritorio.png. -->
+          <img class="brand-logo" src="IMG/logo-escritorio.png" alt="Logo do escritório" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+          <span class="brand-name logo-fallback">Logo do escritório</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- MENU: os links abaixo apontam para as páginas atuais do Google Sites. -->
+        <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+          <a class="active" href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/in%C3%ADcio">Início</a>
+          <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/conceitos-fundamentais">Conceitos</a>
+          <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/cronograma-da-reforma-tribut%C3%A1ria">Cronograma</a>
+          <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/base-legal-da-reforma-tribut%C3%A1ria">Base legal</a>
+          <details class="nav-dropdown">
+            <summary>Tributos</summary>
+            <div class="dropdown-menu">
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/ibs">IBS</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/cbs">CBS</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/is">IS</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/base-de-c%C3%A1lculo-do-ibs-e-da-cbs">Base de cálculo</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/incid%C3%AAncia-e-n%C3%A3o-incid%C3%AAncia">Incidência e não incidência</a>
+            </div>
+          </details>
+          <details class="nav-dropdown">
+            <summary>Operações</summary>
+            <div class="dropdown-menu">
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/split-payment">Split Payment</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/regras-operacionais-especiais">Regras operacionais especiais</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/regimes-diferenciados">Regimes diferenciados</a>
+              <a href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/novos-elementos-nf-e">Novos elementos NF-e</a>
+            </div>
+          </details>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- HERO: título, chamada e botões podem ser alterados aqui. -->
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">MV Contadores apresenta</p>
+            <h1>Portal da <span>Reforma Tributária</span></h1>
+            <p class="hero-text">
+              Um guia claro e confiável para entender as mudanças na tributação do consumo no Brasil.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#reforma">Começar a leitura</a>
+              <a class="button button-secondary" href="#mudancas">Conheça os novos tributos</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Informações principais">
+            <p class="panel-label">Principais referências</p>
+            <div class="reference-list">
+              <a class="reference-item" href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener noreferrer"><span class="reference-dot"></span><strong>EC 132/2023</strong><small>Institui a reforma</small></a>
+              <a class="reference-item" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer"><span class="reference-dot"></span><strong>LC 214/2025</strong><small>Regulamenta o novo modelo</small></a>
+              <div><span class="reference-dot"></span><strong>IVA Dual</strong><small>IBS e CBS</small></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- BANNERS: para adicionar um novo banner, copie o bloco .carousel-slide abaixo. -->
+      <section class="banner-section" aria-label="Destaques do portal">
+        <div class="container">
+          <div class="banner-carousel" data-carousel>
+            <div class="carousel-track">
+              <a class="carousel-slide is-active" href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/novos-elementos-nf-e" aria-label="Saiba mais sobre os novos elementos da NF-e">
+                <img src="IMG/AlertaNFE.png" alt="Alerta importante: mudança obrigatória na emissão de documentos fiscais eletrônicos a partir de 3 de agosto de 2026." />
+              </a>
+            </div>
+            <div class="carousel-controls" aria-label="Navegação dos banners">
+              <button class="carousel-dot is-active" type="button" aria-label="Banner 1" aria-current="true"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS INTRODUTÓRIOS: reutilize a classe "info-card" em novos destaques. -->
+      <section class="quick-links section-sm" aria-label="Acessos rápidos">
+        <div class="container cards-grid cards-grid-3">
+          <a class="info-card" href="#reforma">
+            <span class="card-icon">01</span><h2>Entenda a reforma</h2>
+            <p>Veja o objetivo e os fundamentos das mudanças.</p><span class="card-link">Ler introdução →</span>
+          </a>
+          <a class="info-card" href="#sistema-atual">
+            <span class="card-icon">02</span><h2>Sistema atual</h2>
+            <p>Conheça os tributos que compõem o modelo vigente.</p><span class="card-link">Ver tributos →</span>
+          </a>
+          <a class="info-card" href="#mudancas">
+            <span class="card-icon">03</span><h2>O que muda</h2>
+            <p>Conheça IBS, CBS e o Imposto Seletivo.</p><span class="card-link">Explorar mudanças →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SEÇÃO EDITÁVEL: texto principal de apresentação. -->
+      <section id="reforma" class="section">
+        <div class="container content-grid">
+          <div>
+            <p class="eyebrow">Visão geral</p>
+            <h2>O que é a Reforma Tributária?</h2>
+          </div>
+          <div class="prose">
+            <p>A Reforma Tributária do consumo é a maior mudança no sistema tributário brasileiro desde a Constituição de 1988. Seu principal objetivo é simplificar a tributação sobre bens e serviços, reduzir a cumulatividade dos tributos, aumentar a transparência da carga tributária e diminuir conflitos entre contribuintes e administrações tributárias.</p>
+            <p>A reforma foi instituída pela Emenda Constitucional nº 132/2023, que alterou diversos dispositivos da Constituição Federal, e regulamentada principalmente pela Lei Complementar nº 214/2025.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SISTEMA ATUAL: cada cartão é um componente reutilizável (.tax-card). -->
+      <section id="sistema-atual" class="section section-muted">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Hoje</p><h2>Como é o sistema atual?</h2></div>
+            <p>Atualmente, o consumo é tributado por diversos tributos com regras, bases de cálculo e obrigações próprias.</p>
+          </div>
+          <div class="tax-grid">
+            <article class="tax-card"><strong>ICMS</strong><span>Tributo estadual</span></article>
+            <article class="tax-card"><strong>ISS</strong><span>Tributo municipal</span></article>
+            <article class="tax-card"><strong>PIS</strong><span>Contribuição federal</span></article>
+            <article class="tax-card"><strong>COFINS</strong><span>Contribuição federal</span></article>
+            <article class="tax-card"><strong>IPI</strong><span>Imposto federal</span></article>
+          </div>
+          <p class="section-note">Cada tributo possui legislação própria, diferentes bases de cálculo, regimes especiais, benefícios fiscais e obrigações acessórias, tornando o sistema complexo e oneroso para empresas e governos.</p>
+        </div>
+      </section>
+
+      <!-- NOVOS TRIBUTOS: substitua os links # pelos endereços das páginas IBS, CBS e IS. -->
+      <section id="mudancas" class="section">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <div><p class="eyebrow">Novo modelo</p><h2>O que muda com a Reforma Tributária?</h2></div>
+            <p>O Brasil passa gradualmente para o modelo de IVA Dual, concentrando a tributação do consumo em novos tributos.</p>
+          </div>
+          <div class="new-tax-grid">
+            <a class="new-tax-card ibs" href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/ibs">
+              <span class="tax-tag">IBS</span><h3>Imposto sobre Bens e Serviços</h3><p>Tributo compartilhado entre estados, municípios e Distrito Federal.</p>
+              <div class="replacement"><span>Substitui</span><strong>ICMS</strong><strong>ISS</strong></div><span class="card-link">Saiba mais →</span>
+            </a>
+            <a class="new-tax-card cbs" href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/cbs">
+              <span class="tax-tag">CBS</span><h3>Contribuição sobre Bens e Serviços</h3><p>Tributo federal que incide sobre bens e serviços.</p>
+              <div class="replacement"><span>Substitui</span><strong>PIS</strong><strong>COFINS</strong></div><span class="card-link">Saiba mais →</span>
+            </a>
+            <a class="new-tax-card is" href="https://sites.google.com/mvcontadores.com.br/mvreformatributria/is">
+              <span class="tax-tag">IS</span><h3>Imposto Seletivo</h3><p>Destinado a desestimular o consumo de produtos prejudiciais à saúde ou ao meio ambiente.</p>
+              <div class="replacement"><span>Exemplos</span><strong>Cigarros</strong><strong>Bebidas alcoólicas</strong></div><span class="card-link">Saiba mais →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BASE LEGAL: adicione ou remova itens na lista abaixo quando necessário. -->
+      <section id="base-legal" class="section section-muted">
+        <div class="container legal-callout">
+          <div class="legal-icon" aria-hidden="true">§</div>
+          <div class="legal-copy"><p class="eyebrow">Para consulta</p><h2>Base legal da Reforma Tributária</h2><p>Os fundamentos do novo sistema estão na Constituição Federal, com as alterações da EC nº 132/2023 e sua regulamentação complementar.</p></div>
+          <ul class="legal-list">
+            <li><strong>IBS</strong><span>Art. 156-A da Constituição Federal</span></li>
+            <li><strong>CBS</strong><span>Art. 195, inciso V, da Constituição Federal</span></li>
+            <li><strong>IS</strong><span>Art. 153, inciso VIII, da Constituição Federal</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato" class="site-footer">
+      <div class="container footer-content">
+        <div><a class="brand brand-footer" href="#inicio"><img class="brand-logo" src="IMG/logo-escritorio.png" alt="Logo do escritório" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" /><span class="brand-name logo-fallback">Logo do escritório</span></a><p>Portal da Reforma Tributária.<br />Conteúdo técnico, claro e atualizado.</p></div>
+        <div><p class="footer-title">Navegação</p><a href="#reforma">Conceitos fundamentais</a><a href="#sistema-atual">Sistema atual</a><a href="#mudancas">Novos tributos</a></div>
+        <div><p class="footer-title">Contato</p><p class="footer-address">Av. Gentil Bitencourt, 1096, Sala 06 e 07<br />66035-115, Bairro Nazaré<br />Belém - PA, Brasil</p><a href="tel:+559132491682">Telefone: (91) 3249-1682</a><a href="https://wa.me/5591982193911?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20os%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener noreferrer">WhatsApp: +55 91 98852-8487</a><a href="mailto:atendimento@mvcontadores.com.br">atendimento@mvcontadores.com.br</a><p class="footer-update">Última atualização: julho de 2026</p></div>
+      </div>
+      <div class="container footer-bottom">© 2026 MV Contadores. Todos os direitos reservados.</div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.main-nav');
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Carrossel: ao adicionar novos .carousel-slide, os banners alternam automaticamente.
+      document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+        const slides = [...carousel.querySelectorAll('.carousel-slide')];
+        const controls = carousel.querySelector('.carousel-controls');
+        let dots = [...carousel.querySelectorAll('.carousel-dot')];
+        while (dots.length < slides.length) {
+          const dot = document.createElement('button');
+          dot.className = 'carousel-dot';
+          dot.type = 'button';
+          dot.setAttribute('aria-label', `Banner ${dots.length + 1}`);
+          controls.appendChild(dot);
+          dots = [...carousel.querySelectorAll('.carousel-dot')];
+        }
+        if (slides.length < 2) return;
+        let current = 0;
+        const showSlide = (index) => {
+          slides[current].classList.remove('is-active');
+          dots[current].classList.remove('is-active');
+          dots[current].removeAttribute('aria-current');
+          current = index;
+          slides[current].classList.add('is-active');
+          dots[current].classList.add('is-active');
+          dots[current].setAttribute('aria-current', 'true');
+        };
+        dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+        setInterval(() => showSlide((current + 1) % slides.length), 6000);
+      });
+    </script>
+  </body>
+</html>
