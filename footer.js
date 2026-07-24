@@ -29,6 +29,9 @@ const localRoutes = {
   '/base-legal-da-reforma-tribut%C3%A1ria': 'base-legal.html',
   '/ibs': 'ibs.html',
   '/cbs': 'cbs.html'
+  ,'/is': 'is.html'
+  ,'/base-de-c%C3%A1lculo-do-ibs-e-da-cbs': 'base-calculo.html'
+  ,'/incid%C3%AAncia-e-n%C3%A3o-incid%C3%AAncia': 'incidencia-nao-incidencia.html'
 };
 document.querySelectorAll('a[href]').forEach((link) => {
   const href = link.getAttribute('href');
@@ -37,6 +40,20 @@ document.querySelectorAll('a[href]').forEach((link) => {
     if (href.includes(legacyPath)) {
       link.setAttribute('href', localFile);
       break;
+    }
+  }
+});
+
+/* Garante a navegação local mesmo em páginas antigas que ainda tenham um link legado. */
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a[href]');
+  if (!link) return;
+  const href = link.getAttribute('href') || '';
+  for (const [legacyPath, localFile] of Object.entries(localRoutes)) {
+    if (href.includes(legacyPath)) {
+      event.preventDefault();
+      window.location.assign(localFile);
+      return;
     }
   }
 });

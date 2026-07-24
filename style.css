@@ -150,3 +150,6 @@ h2 { margin-bottom: 0; font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.15;
 @media (max-width: 500px) {
   .container { width: min(calc(100% - 28px), var(--max-width)); }.brand-logo { width: 150px; height: 54px; }.section { padding-block: 68px; }.section-sm { padding-block: 28px; }.hero-grid { padding-block: 60px; }.hero-panel, .legal-callout { padding: 25px; }.tax-grid, .footer-content { grid-template-columns: 1fr; }.legal-callout { grid-template-columns: 1fr; gap: 20px; }.legal-list { grid-column: auto; }.new-tax-card { min-height: 0; }
 }
+
+/* Nestas páginas, os últimos tópicos continuam o conteúdo — sem caixa de conclusão. */
+#transicao.tax-conclusion, #terceiro-setor.tax-conclusion { padding: 0; border: 0; border-radius: 0; background: transparent; }
