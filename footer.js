@@ -26,12 +26,17 @@ document.querySelectorAll('[data-site-footer]').forEach((footer) => {
 /* Mantém os links das páginas que já migraram para o portal local. */
 const localRoutes = {
   '/conceitos-fundamentais': 'conceitos.html',
+  '/cronograma-da-reforma-tribut%C3%A1ria': 'cronograma.html',
   '/base-legal-da-reforma-tribut%C3%A1ria': 'base-legal.html',
   '/ibs': 'ibs.html',
   '/cbs': 'cbs.html'
   ,'/is': 'is.html'
   ,'/base-de-c%C3%A1lculo-do-ibs-e-da-cbs': 'base-calculo.html'
   ,'/incid%C3%AAncia-e-n%C3%A3o-incid%C3%AAncia': 'incidencia-nao-incidencia.html'
+  ,'/split-payment': 'split-payment.html'
+  ,'/regras-operacionais-especiais': 'regras-operacionais-especiais.html'
+  ,'/regimes-diferenciados': 'regimes-diferenciados.html'
+  ,'/novos-elementos-nf-e': 'novos-elementos-nfe.html'
 };
 document.querySelectorAll('a[href]').forEach((link) => {
   const href = link.getAttribute('href');
